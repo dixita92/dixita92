@@ -1,0 +1,10 @@
+def sort_article_titles():
+    print("Welcome to the Article Title Sorter!")
+    title_list = input("Please enter a list of article titles, separated by commas: ")
+    titles = [title.strip() for title in title_list.split(",")]
+    sorted_titles = sorted(titles)
+    print("\nSorted Titles:")
+    for title in sorted_titles:
+        print(title)
+
+sort_article_titles()
